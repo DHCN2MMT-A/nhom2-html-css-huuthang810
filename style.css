@@ -1,0 +1,81 @@
+#menu ul {
+    background: #1F568B;
+    list-style-type: none;
+    text-align: center;
+  }
+  #menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+  }
+  #menu a {
+    text-decoration: none;
+    color: #fff;	
+    display: block;
+  }
+  #menu a:hover {
+    background: blue;
+    color: red;
+  }
+  
+ #lienhe{
+     color: black;
+     display: inline-block;
+     background-color: white;
+     margin-right: -12px;
+ }
+ #contact{
+     text-align: center;
+ }
+ h2{
+     text-align: center;
+ }
+ .hinhanh1{
+    grid-area: hinhanh1;
+}
+ .title1{
+     grid-area: title1;
+ }
+ #menu{
+     grid-template-areas: menu;
+ }
+.grid{
+    display: grid;
+    margin-left: 210px;
+    grid-template-columns: 850px  1fr 100px;
+    grid-template-areas: 
+    ".  menu .";
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: 210px 1fr 5px 220px 475px;
+    grid-template-rows: 1fr 0,5fr;
+    grid-template-areas: 
+    
+    ". hinhanh1 . title1 .";
+}
+.hinhanh2{
+    grid-area: hinhanh2;
+}
+.title3{
+    grid-area: title3;
+}
+.video1{
+    grid-area: video1;
+}
+ .title2{
+     grid-area: title2;
+ }
+
+.grid2{
+    display: grid;
+    grid-template-columns: 210px 1fr 5px 220px 475px;
+    grid-template-rows: 1fr 20px 1fr;
+    grid-template-areas: 
+    ". hinhanh2 . title2 ."
+    ". . . . ."
+    ". video1 . title3 .";
+}
